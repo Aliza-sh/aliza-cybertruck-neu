@@ -2,6 +2,22 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.AlizaCybertruck" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <!--  Primary brand color.  -->
+        <item name="colorPrimary">@color/neu_theme_night_background</item>
+        <item name="colorPrimaryVariant">@color/neu_theme_night_background</item>
+        <item name="colorOnPrimary">@color/text_white</item>
+        <!--  Secondary brand color.  -->
+        <item name="colorSecondary">@color/blue_light</item>
+        <item name="colorSecondaryVariant">@color/blue_light</item>
+        <item name="colorOnSecondary">@color/text_gray</item>
+        <!--  Status bar color.  -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <item name="fontFamily">@font/gilroy</item>
+        <!--  neumorphism color.  -->
+        <item name="neumorph_backgroundColor">?attr/colorPrimary</item>
+        <item name="neumorph_shadowColorDark">@color/neu_theme_night_shadow_dark</item>
+        <item name="neumorph_shadowColorLight">@color/neu_theme_night_shadow_light</item>
+
+
     </style>
 </resources>
