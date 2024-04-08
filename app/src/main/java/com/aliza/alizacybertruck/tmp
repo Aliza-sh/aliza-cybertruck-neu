@@ -1,0 +1,66 @@
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/txt_open"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <soup.neumorphism.NeumorphButton
+            android:id="@+id/neumorphImageButton"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:padding="26dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:neumorph_backgroundColor="@color/blue_light"
+            app:neumorph_shadowColorDark="?attr/neumorph_shadowColorDark"
+            app:neumorph_shadowColorLight="?attr/neumorph_shadowColorLight"
+            app:neumorph_shadowElevation="9dp"
+            app:neumorph_shapeAppearance="@style/NeumorphismImage"
+            app:neumorph_shapeType="flat"
+            app:neumorph_strokeWidth="2dp" />
+
+        <View
+            android:layout_width="77dp"
+            android:layout_height="77dp"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            android:background="@drawable/v"
+            app:layout_constraintBottom_toBottomOf="@+id/neumorphImageButton"
+            app:layout_constraintEnd_toEndOf="@+id/neumorphImageButton"
+            app:layout_constraintStart_toStartOf="@+id/neumorphImageButton"
+            app:layout_constraintTop_toTopOf="@+id/neumorphImageButton" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_lock" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/txt_open"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="Tap to open the car"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+
+
+
+        <?xml version="1.0" encoding="utf-8"?>
+        <shape xmlns:android="http://schemas.android.com/apk/res/android"
+            android:shape="oval">
+            <gradient
+                android:angle="10"
+                android:endColor="#80000000"
+                android:startColor="#80FFFFFF" />
+        </shape>
