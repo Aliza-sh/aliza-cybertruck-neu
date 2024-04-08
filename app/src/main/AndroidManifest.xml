@@ -13,6 +13,9 @@
         android:theme="@style/Theme.AlizaCybertruck"
         tools:targetApi="31">
         <activity
+            android:name=".ManagCarActivity"
+            android:exported="false" />
+        <activity
             android:name=".OpenCarActivity"
             android:exported="true">
             <intent-filter>
