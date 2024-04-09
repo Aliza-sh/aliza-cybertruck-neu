@@ -31,27 +31,13 @@
             app:neumorph_shadowColorLight="?attr/neumorph_shadowColorLight"
             app:neumorph_shadowElevation="5dp"
             app:neumorph_shapeAppearance="@style/NeumorphismOval"
-            app:neumorph_shapeType="basin" />
+            app:neumorph_shapeType="flat" />
 
         <ImageView
             android:layout_width="120dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:src="@drawable/img_tesla_photography" />
-
-        <soup.neumorphism.NeumorphImageButton
-            android:id="@+id/btn_statics"
-            android:layout_width="72dp"
-            android:layout_height="72dp"
-            android:layout_gravity="start"
-            android:padding="27dp"
-            android:src="@drawable/ic_statics"
-            app:neumorph_backgroundColor="?attr/neumorph_backgroundColor"
-            app:neumorph_shadowColorDark="?attr/neumorph_shadowColorDark"
-            app:neumorph_shadowColorLight="?attr/neumorph_shadowColorLight"
-            app:neumorph_shadowElevation="5dp"
-            app:neumorph_shapeAppearance="@style/NeumorphismOval"
-            app:neumorph_shapeType="basin" />
 
     </FrameLayout>
 
@@ -129,41 +115,36 @@
 
     <soup.neumorphism.NeumorphCardView
         android:id="@+id/btn_open_car"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="28dp"
-        android:paddingStart="12dp"
-        android:paddingTop="12dp"
-        android:paddingEnd="24dp"
-        android:paddingBottom="12dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:neumorph_backgroundColor="?attr/neumorph_backgroundColor"
         app:neumorph_shadowColorDark="?attr/neumorph_shadowColorDark"
         app:neumorph_shadowColorLight="?attr/neumorph_shadowColorLight"
         app:neumorph_shadowElevation="4dp"
-        app:neumorph_shapeAppearance="@style/NeumorphismRounded_10"
+        app:neumorph_shapeAppearance="@style/NeumorphismOval"
         app:neumorph_shapeType="flat">
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:orientation="horizontal">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_lock" />
 
-            <ImageView
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:src="@drawable/ic_lock" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Tap to open the car"
-                android:textColor="?attr/colorOnPrimary"
-                android:textSize="16sp" />
-        </LinearLayout>
     </soup.neumorphism.NeumorphCardView>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="Tap to open the car"
+        android:textColor="?attr/colorOnPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btn_open_car"
+        app:layout_constraintStart_toStartOf="@+id/btn_open_car" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
