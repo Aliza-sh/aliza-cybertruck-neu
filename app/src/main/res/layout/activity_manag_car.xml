@@ -102,6 +102,7 @@
             android:paddingEnd="10dp">
 
             <soup.neumorphism.NeumorphCardView
+                android:id="@+id/btn_engin_mode"
                 android:layout_width="170dp"
                 android:layout_height="170dp"
                 android:layout_marginEnd="10dp"
@@ -152,6 +153,7 @@
             </soup.neumorphism.NeumorphCardView>
 
             <soup.neumorphism.NeumorphCardView
+                android:id="@+id/btn_climate_mode"
                 android:layout_width="170dp"
                 android:layout_height="170dp"
                 android:layout_marginEnd="10dp"
@@ -201,6 +203,7 @@
             </soup.neumorphism.NeumorphCardView>
 
             <soup.neumorphism.NeumorphCardView
+                android:id="@+id/btn_tires_mode"
                 android:layout_width="170dp"
                 android:layout_height="170dp"
                 android:layout_marginEnd="10dp"
@@ -250,6 +253,7 @@
             </soup.neumorphism.NeumorphCardView>
 
             <soup.neumorphism.NeumorphCardView
+                android:id="@+id/btn_direction_mode"
                 android:layout_width="170dp"
                 android:layout_height="170dp"
                 android:layout_marginEnd="10dp"
